@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-08",
+  "scope": "当次已授权管理员；年、季、月、周页面；功能验收",
+  "sourceTitle": "数字指标修复生产浏览器验收记录",
+  "rows": [
+    {
+      "period": "年度",
+      "check": "亏损收窄判达标",
+      "result": "通过"
+    },
+    {
+      "period": "年度",
+      "check": "亏损扩大未达标",
+      "result": "通过"
+    },
+    {
+      "period": "年度",
+      "check": "小数百分比保存与刷新",
+      "result": "通过"
+    },
+    {
+      "period": "年度",
+      "check": "零目标与零实际",
+      "result": "通过"
+    },
+    {
+      "period": "年度",
+      "check": "正小数超额达标",
+      "result": "通过"
+    },
+    {
+      "period": "年度",
+      "check": "接近目标仍未达标",
+      "result": "通过"
+    },
+    {
+      "period": "年度",
+      "check": "负数百分比",
+      "result": "通过"
+    },
+    {
+      "period": "季度",
+      "check": "多指标保存与编辑回读",
+      "result": "通过"
+    },
+    {
+      "period": "季度",
+      "check": "季度整页刷新",
+      "result": "通过"
+    },
+    {
+      "period": "月度",
+      "check": "多指标存在未达标项",
+      "result": "通过"
+    },
+    {
+      "period": "月度",
+      "check": "月度编辑回读",
+      "result": "通过"
+    },
+    {
+      "period": "月度",
+      "check": "接近目标不显示为完成",
+      "result": "通过"
+    },
+    {
+      "period": "月度",
+      "check": "所有指标达标",
+      "result": "通过"
+    },
+    {
+      "period": "月度",
+      "check": "月度整页刷新",
+      "result": "通过"
+    },
+    {
+      "period": "周度",
+      "check": "周度多指标达标",
+      "result": "通过"
+    },
+    {
+      "period": "周度",
+      "check": "周度编辑回读",
+      "result": "通过"
+    },
+    {
+      "period": "周度",
+      "check": "零目标与负实际未达标",
+      "result": "通过"
+    },
+    {
+      "period": "周度",
+      "check": "周度整页刷新",
+      "result": "通过"
+    },
+    {
+      "period": "年度",
+      "check": "少亏达到目标的原始问题复验",
+      "result": "通过"
+    }
+  ]
+}
