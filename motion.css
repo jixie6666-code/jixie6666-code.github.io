@@ -1,0 +1,48 @@
+/* Motion adds feedback without changing text, layout, or default visibility. */
+.site-header{transition:box-shadow .35s ease,background .35s ease}
+.site-header.is-scrolled{box-shadow:0 5px 22px #22375b09;background:#ffffffed}
+.site-header::after{content:"";position:absolute;bottom:-1px;left:0;width:100%;height:2px;background:linear-gradient(90deg,#3973ed,#9b80e4);transform:scaleX(var(--page-progress,0));transform-origin:left;pointer-events:none}
+.primary,.button,.site-links a[href$="#contact"]{transition:transform .25s ease,background .25s ease,box-shadow .3s ease}
+.story-link span,.text-button span,.project-read span,.email-link span,.hero-bottom a span,.logo-symbol b{display:inline-block;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.spotlight{transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.spotlight-card{transition:box-shadow .5s ease}
+.portrait-image{transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.project,.commerce-feature{transition:transform .45s cubic-bezier(.22,1,.36,1),box-shadow .45s ease}
+.guide-preview,.task-preview{transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.personal-note{position:relative;transition:transform .4s cubic-bezier(.22,1,.36,1)}
+.personal-note::before{content:"";position:absolute;inset:-1px 0 auto;height:2px;background:linear-gradient(90deg,#3f75eb,#a08add);transform:scaleX(0);transform-origin:left;transition:transform .55s cubic-bezier(.22,1,.36,1)}
+.personal-note h3{transition:color .3s ease}
+
+@media(prefers-reduced-motion:no-preference){
+  /* The decorative welcome motion settles within five seconds. */
+  .motion-ready .spotlight-card{animation:xg-float-in 4.6s ease-in-out 1}
+  .motion-ready .spotlight-seal{animation:xg-seal-in 4.6s cubic-bezier(.22,1,.36,1) 1}
+  .motion-ready .accent{background-size:180% 100%;animation:xg-color-in 4s ease-in-out 1}
+  @keyframes xg-float-in{0%{transform:translateY(10px)}35%{transform:translateY(-6px)}70%{transform:translateY(3px)}100%{transform:none}}
+  @keyframes xg-seal-in{0%{transform:translateY(8px) rotate(0deg)}35%{transform:translateY(-5px) rotate(18deg)}100%{transform:rotate(12deg)}}
+  @keyframes xg-color-in{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+}
+
+@media(hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){
+  .primary:hover,.button:hover,.site-links a[href$="#contact"]:hover{transform:translateY(-2px);box-shadow:0 8px 20px #315dde26}
+  .story-link:hover span,.text-button:hover span,.project-read:hover span,.email-link:hover span{transform:translate(4px,-2px)}
+  .hero-bottom a:hover span{transform:translateY(4px)}
+  .brand:hover .logo-symbol b:nth-child(1){transform:translateY(-3px)}
+  .brand:hover .logo-symbol b:nth-child(2){transform:translateY(2px);transition-delay:40ms}
+  .brand:hover .logo-symbol b:nth-child(3){transform:translateY(-2px);transition-delay:80ms}
+  .spotlight:hover{transform:translateY(-4px)}
+  .spotlight:hover .spotlight-card{box-shadow:0 10px 22px #253f6808,0 28px 70px #3d538c1a}
+  .spotlight:hover .portrait-image{transform:scale(1.025)}
+  .project:hover,.commerce-feature:hover{transform:translateY(-6px);box-shadow:0 18px 45px #33477012}
+  .project:hover .guide-preview,.project:hover .task-preview{transform:rotate(0) translateY(-3px)}
+  .personal-note:hover{transform:translateY(-4px)}
+  .personal-note:hover::before{transform:scaleX(1)}
+  .personal-note:hover h3{color:#3d59b2}
+}
+
+.project:focus-within,.commerce-feature:focus-within{box-shadow:0 0 0 2px #7894e8,0 12px 32px #33477010}
+@media(prefers-reduced-motion:reduce){
+  .spotlight,.project,.commerce-feature,.personal-note,.portrait-image{animation:none!important;transition:none!important}
+  .site-header::after{display:none}
+}
+@media print{.site-header::after{display:none}*{animation:none!important;transition:none!important;translate:none!important}}
