@@ -30,7 +30,7 @@ dialog{padding:0;border:1px solid #e2e7ef;background:#fff;color:var(--ink);borde
 .contact-follow{background:#fffcf5;border:1px solid #e2dbc9;border-radius:20px;padding:26px 28px 23px;min-width:0;max-width:490px;width:100%;justify-self:end}
 .account-heading{display:flex;align-items:center;gap:15px;margin-bottom:22px}
 .account-avatar{width:64px;height:64px;border-radius:50%;overflow:hidden;position:relative;flex-shrink:0;background:#ede5d6;border:1px solid #e4dac5}
-.account-avatar img{position:absolute;max-width:none;width:305.862069%;height:auto;left:-17.241379%;top:-3.448276%}
+.account-avatar img{display:block;width:100%;height:100%;object-fit:cover}
 .account-label{display:block;color:#867650;font-size:12px;letter-spacing:.06em;line-height:1.6}
 .account-heading h3{font-size:25px;line-height:1.5;font-weight:600;letter-spacing:1px;color:#3c3d37}
 .account-body{display:grid;grid-template-columns:minmax(0,1fr) 178px;gap:23px;align-items:center}
@@ -38,7 +38,7 @@ dialog{padding:0;border:1px solid #e2e7ef;background:#fff;color:var(--ink);borde
 .wechat-original{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:13px;color:#526486;text-underline-offset:4px}
 .account-code{margin:0;text-align:center;min-width:0}
 .wechat-code{display:block;width:178px;aspect-ratio:1;overflow:hidden;position:relative;border:6px solid #fff;border-radius:8px;background:#fff;cursor:zoom-in}
-.wechat-code img{position:absolute;width:550.931677%;max-width:none;height:auto;left:-430.124224%;top:-57.142857%}
+.wechat-code img{display:block;width:100%;height:100%;object-fit:contain}
 .wechat-code:focus-visible{outline:3px solid #315dde;outline-offset:5px}
 .account-code figcaption{font-size:12px;line-height:1.8;color:#776e5c;margin-top:8px;white-space:nowrap}
 .scan-mobile{display:none}
@@ -91,3 +91,6 @@ dialog{padding:0;border:1px solid #e2e7ef;background:#fff;color:var(--ink);borde
 .wechat-code{width:178px}
 .account-code figcaption{font-size:12px}
 }
+
+/* Preserve the reviewed composition while choosing smaller image files. */
+.hero-picture{display:block;background:#eef1fa}
