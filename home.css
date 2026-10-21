@@ -8,8 +8,86 @@ dialog{padding:0;border:1px solid #e2e7ef;background:#fff;color:var(--ink);borde
 @media(max-width:360px){.hero h1{font-size:33px}.hero-actions{gap:8px}.hero-actions>a{font-size:15px}.metric-pair strong{font-size:46px}.email-link{font-size:19px}.handoff-flow{gap:3px}.handoff-flow>span{font-size:11px;padding:7px 5px}}
 @media print{body{background:white;font-size:10pt}body>*:not(#resumeDialog){display:none!important}#resumeDialog{position:static;display:block!important;max-height:none;width:100%;max-width:none;border:0;box-shadow:none;margin:0;padding:0;overflow:visible;background:white}.dialog-body{padding:0}.dialog-top,.dialog-bottom{display:none!important}.resume-section{break-inside:avoid;padding:10px 0;margin-top:12px}.resume-section h3{font-size:10pt}.resume-section p,.dialog-lead{font-size:9pt}a{text-decoration:none}@page{size:A4;margin:16mm}}
 @media(max-width:800px){.spotlight{transform:none;max-width:100%}.spotlight-seal{right:0}}
-/* Audience revision: actions and evidence appear before career interpretation. */
+/* Business, data and judgment form a readable implementation story. */
+.business-map{margin-top:12px}.business-map>div{padding:20px 0;border-bottom:1px solid #ded7e9}.business-map>div:last-child{border-bottom:0;padding-bottom:2px}.business-map span{font-size:12px;color:#827092;letter-spacing:.03em}.business-map h3{font-size:20px;line-height:1.65;color:#55486b;font-weight:550;margin:8px 0 5px}.business-map p{font-size:14px;line-height:1.8;color:#7a6b88}.hero h1 .accent{margin-top:8px}@media(max-width:600px){.business-map>div{padding:17px 0}.business-map h3{font-size:19px}.business-map p{font-size:14px}}
 .hero-role{font-size:15px;line-height:1.9;color:#374f78;margin:-7px 0 16px;font-weight:550}.hero-role span{font-size:13px;color:#78829a;font-weight:400}.hero-proof{border-left:2px solid #a09bd3;padding:3px 0 3px 16px;margin-top:22px}.hero-proof h2{font-size:16px;font-weight:550;line-height:1.8;letter-spacing:0}.hero-proof p{font-size:12px;line-height:1.9;color:#73809b;margin-top:4px}.hero-proof a{display:inline-block;min-height:32px}.career-entry{border:0;background:none;padding:0;cursor:pointer}.result-line small{display:block;font-size:12px;color:#78839a;margin-top:6px}.audit-preview{padding:30px;border-radius:19px;border:1px solid #dedfec;background:#f3f2fa}.audit-split{display:flex;align-items:center;justify-content:space-between;gap:19px;margin-top:27px}.audit-split>div{background:#fff;padding:19px 21px;border-radius:10px;flex:1}.audit-split span{font-size:12px;color:#8b829d;display:block;margin-bottom:8px}.audit-split strong{font-size:23px;font-weight:550;color:#62547c}.audit-split>b{font-size:27px;font-weight:400;color:#9a90b1}.audit-question{font-size:23px;color:#554b70;line-height:1.7;margin:23px 0}.audit-output{border-top:1px solid #dcd6e8;padding-top:19px;display:grid;grid-template-columns:85px 1fr;gap:14px}.audit-output>span{font-size:12px;color:#807090;padding-top:4px}.audit-output p{font-size:15px;line-height:1.95;color:#6d617e}.audit-preview>a{font-size:13px;min-height:44px;display:flex;align-items:center;margin-top:15px}.practice-list p{max-width:950px;line-height:1.9}.contact-mini button,.career-entry{font-family:inherit}
 @media(max-width:1000px){.hero-proof h2{font-size:15px}.audit-preview{padding:25px}.audit-split{gap:12px}.audit-split>div{padding:17px}.audit-split strong{font-size:21px}.audit-output{grid-template-columns:70px 1fr;gap:10px}.story-copy h2{font-size:30px}}
 @media(max-width:600px){.hero-role{font-size:14px;margin-top:-5px;margin-bottom:14px}.hero-role span{display:block;font-size:12px}.hero-copy{font-size:16px;line-height:1.9}.hero-proof{margin-top:20px;padding-left:13px}.hero-proof h2{font-size:15px}.hero-proof p{font-size:11px}.hero-actions{margin-top:22px}.audit-preview{padding:23px 20px}.audit-split{gap:10px;margin-top:21px}.audit-split>div{padding:16px 12px}.audit-split strong{font-size:20px}.audit-question{font-size:23px}.audit-output{grid-template-columns:1fr;gap:7px}.audit-output p{font-size:16px}.story-copy h2{font-size:28px}.practice-list p{font-size:13px}.career-entry{font-size:15px}}
 @media(max-width:360px){.hero h1{font-size:31px}.hero-proof h2{font-size:14px}.hero-role{font-size:13px}.hero-actions{gap:14px}.audit-split strong{font-size:18px}.audit-split>div{padding:14px 10px}.story-copy h2{font-size:26px}}
+
+/* A single contact area; the account has its own clear, shared visual boundary. */
+.contact-integrated{background:#f7f5ef;color:#263149;border-top:1px solid #e8e2d6;padding-top:57px}
+.contact-integrated .contact-top{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:92px;padding-bottom:54px;scroll-margin-top:105px}
+.contact-integrated .eyebrow{color:#8b7548}
+.contact-integrated h2{font-size:39px;line-height:1.55;font-weight:550;letter-spacing:-.6px;margin:13px 0 20px}
+.contact-integrated p{color:#69665e;font-size:16px;line-height:1.95}
+.contact-integrated .contact-links{margin-top:23px;max-width:470px}
+.contact-integrated .email-link{font-size:23px;color:#365db6;border-color:#d6d7d5;padding:9px 0}
+.contact-integrated .contact-mini{gap:26px;margin-top:12px}
+.contact-integrated .contact-mini a,.contact-integrated .contact-mini button{color:#526486;font-size:14px}
+.contact-integrated .footer{border-color:#deddd6;color:#76736c}
+.contact-integrated .footer a{color:#596984}
+.contact-follow{background:#fffcf5;border:1px solid #e2dbc9;border-radius:20px;padding:26px 28px 23px;min-width:0;max-width:490px;width:100%;justify-self:end}
+.account-heading{display:flex;align-items:center;gap:15px;margin-bottom:22px}
+.account-avatar{width:64px;height:64px;border-radius:50%;overflow:hidden;position:relative;flex-shrink:0;background:#ede5d6;border:1px solid #e4dac5}
+.account-avatar img{position:absolute;max-width:none;width:305.862069%;height:auto;left:-17.241379%;top:-3.448276%}
+.account-label{display:block;color:#867650;font-size:12px;letter-spacing:.06em;line-height:1.6}
+.account-heading h3{font-size:25px;line-height:1.5;font-weight:600;letter-spacing:1px;color:#3c3d37}
+.account-body{display:grid;grid-template-columns:minmax(0,1fr) 178px;gap:23px;align-items:center}
+.contact-integrated .account-note p{font-size:15px;color:#6d695e;line-height:1.85;margin:0 0 12px}
+.wechat-original{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:13px;color:#526486;text-underline-offset:4px}
+.account-code{margin:0;text-align:center;min-width:0}
+.wechat-code{display:block;width:178px;aspect-ratio:1;overflow:hidden;position:relative;border:6px solid #fff;border-radius:8px;background:#fff;cursor:zoom-in}
+.wechat-code img{position:absolute;width:550.931677%;max-width:none;height:auto;left:-430.124224%;top:-57.142857%}
+.wechat-code:focus-visible{outline:3px solid #315dde;outline-offset:5px}
+.account-code figcaption{font-size:12px;line-height:1.8;color:#776e5c;margin-top:8px;white-space:nowrap}
+.scan-mobile{display:none}
+@media(max-width:1100px){
+.spotlight-seal{right:-8px}
+.contact-integrated .contact-top{gap:40px}
+.contact-follow{padding:23px}
+.account-body{grid-template-columns:minmax(0,1fr) 164px;gap:16px}
+.wechat-code{width:164px}
+.contact-integrated h2{font-size:34px}
+.contact-integrated .email-link{font-size:21px}
+.contact-integrated .account-note p{font-size:14px}
+}
+@media(max-width:850px){
+.contact-integrated .contact-top{grid-template-columns:1fr;gap:32px}
+.contact-integrated .contact-links{max-width:520px}
+.contact-follow{justify-self:start;max-width:520px;padding:24px}
+.account-body{grid-template-columns:minmax(0,1fr) 178px;gap:24px}
+.wechat-code{width:178px}
+.contact-integrated .account-note p{font-size:16px}
+}
+@media(max-width:600px){
+.contact-integrated{padding-top:33px}
+.contact-integrated .contact-top{gap:24px;padding-bottom:28px;scroll-margin-top:95px}
+.contact-integrated h2{font-size:30px;line-height:1.5;margin:10px 0 15px}
+.contact-integrated p{font-size:15px;line-height:1.9}
+.contact-integrated .contact-links{margin-top:17px}
+.contact-integrated .email-link{font-size:20px}
+.contact-integrated .contact-mini{gap:23px;margin-top:6px}
+.contact-follow{padding:19px 17px 17px;border-radius:15px}
+.account-heading{gap:12px;margin-bottom:17px}
+.account-avatar{width:50px;height:50px}
+.account-heading h3{font-size:23px}
+.account-label{font-size:11px}
+.account-body{grid-template-columns:minmax(0,1fr) 148px;gap:14px}
+.wechat-code{width:148px;border-width:4px}
+.contact-integrated .account-note p{font-size:14px;line-height:1.85;margin-bottom:10px}
+.account-code figcaption{font-size:11px;margin-top:6px}
+.wechat-original{font-size:12px;gap:6px}
+.scan-desktop{display:none}.scan-mobile{display:inline}
+.desktop-break{display:none}
+}
+@media(max-width:359px){
+.contact-follow{padding:17px}
+.account-heading{margin-bottom:12px}
+.account-body{grid-template-columns:1fr;gap:12px}
+.contact-integrated .account-note p{font-size:14px;margin:0}
+.account-note>p+p,.account-note .wechat-original{display:none}
+.account-code{justify-self:center}
+.wechat-code{width:178px}
+.account-code figcaption{font-size:12px}
+}

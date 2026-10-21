@@ -11,3 +11,6 @@
 .wrap,.shell{max-width:1200px}.site-header{background:#ffffffed;border-bottom-color:#edf0f5;backdrop-filter:blur(20px)}.site-nav{height:80px}.site-links{gap:27px}.site-links a{font-size:15px}.site-links a[href$="#contact"]{background:#315dde;color:white;padding:8px 19px;border-radius:22px;box-shadow:none}.site-links a[href$="#contact"]:hover{background:#264cbb}.primary,.button{border-radius:25px;min-height:50px;padding:11px 23px;gap:22px;font-size:16px;box-shadow:0 4px 12px #315dde0c}.text-button,.story-link{font-size:16px}.arrow{transition:transform .2s}.link:hover .arrow{transform:translate(2px,-2px)}
 @media(max-width:760px){.site-nav{height:66px}.site-links{top:66px;gap:3px}.site-links a{font-size:16px}.site-links a[href$="#contact"]{margin-top:6px;text-align:center;justify-content:center}.wrap,.shell{width:calc(100% - 40px)}}
 @media(prefers-reduced-motion:reduce){.link:hover .arrow{transform:none}}
+
+/* Keep the contact label readable when scroll tracking marks it current. */
+.site-links a[href$="#contact"].active,.site-links a[href$="#contact"][aria-current],.site-links a[href$="#contact"]:hover{color:#fff;box-shadow:none}
