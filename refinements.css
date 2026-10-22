@@ -1,0 +1,93 @@
+/* v19: readable supporting copy, direct project access and persistent dialog controls. */
+.hero-proof p,
+.hero-role span {
+  font-size: 14px;
+  line-height: 1.85;
+  color: #596576;
+}
+.hero-proof a { min-height: 44px; }
+.case-summary dt { font-size: 14px; color: #596576; }
+
+.project-shortcuts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 30px;
+}
+.project-shortcuts a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #dfe4ef;
+  border-radius: 14px;
+  background: #fff;
+  color: var(--ink);
+}
+.project-shortcuts .shortcut-number { font-size: 13px; color: #66748b; }
+.project-shortcuts strong { font-size: 18px; line-height: 1.5; margin-top: 9px; }
+.project-shortcuts p { font-size: 14px; line-height: 1.8; color: #596576; margin-top: 8px; }
+.project-shortcuts .shortcut-arrow { color: var(--blue); margin-top: auto; padding-top: 12px; }
+@media (hover: hover) and (pointer: fine) {
+  .project-shortcuts a:hover { border-color: #899ee3; background: #f7f9ff; }
+}
+@media (max-width: 1000px) {
+  .project-shortcuts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .project-shortcuts { gap: 10px; margin-top: 24px; }
+  .project-shortcuts a { padding: 16px 14px; }
+  .project-shortcuts strong { font-size: 17px; }
+  .project-shortcuts p { font-size: 14px; }
+  .project-shortcuts .shortcut-arrow { padding-top: 8px; }
+}
+
+/* Keep the title and close action outside the scrolling content. */
+dialog[open] { display: flex; flex-direction: column; overflow: hidden; }
+dialog > .dialog-top {
+  flex: 0 0 auto;
+  padding: 14px 22px 14px 32px;
+  margin: 0;
+  border-bottom: 1px solid #e4e8ef;
+  background: #fff;
+}
+dialog > .dialog-top .eyebrow { min-width: 0; font-size: 14px; line-height: 1.6; }
+dialog > .dialog-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 24px 32px 28px;
+}
+@media (max-width: 600px) {
+  dialog > .dialog-top { padding: 12px 16px 12px 22px; }
+  dialog > .dialog-body { padding: 22px; padding-bottom: max(22px, env(safe-area-inset-bottom, 0px)); }
+}
+
+/* Press feedback is available on touch; keyboard focus stays steady. */
+.primary, .button, .text-button, .menu-toggle, .close-button,
+.copy-email, .story-link, .project-shortcuts a, .site-links a {
+  touch-action: manipulation;
+  transition: transform 120ms cubic-bezier(.23, 1, .32, 1),
+    background-color 120ms ease-out, filter 120ms ease-out, box-shadow 160ms ease-out;
+}
+.primary:active:not(:focus-visible), .button:active:not(:focus-visible),
+.text-button:active:not(:focus-visible), .menu-toggle:active:not(:focus-visible),
+.close-button:active:not(:focus-visible), .copy-email:active:not(:focus-visible),
+.story-link:active:not(:focus-visible), .project-shortcuts a:active:not(:focus-visible),
+.site-links a:active:not(:focus-visible), .site-links a[href$="#contact"]:active:not(:focus-visible) {
+  transform: scale(.98);
+  filter: brightness(.94);
+}
+@media (prefers-reduced-motion: reduce) {
+  .primary:active, .button:active, .text-button:active, .menu-toggle:active,
+  .close-button:active, .copy-email:active, .story-link:active,
+  .project-shortcuts a:active, .site-links a:active,
+  .site-links a[href$="#contact"]:active { transform: none !important; }
+}
+@media print {
+  dialog[open] { display: block; overflow: visible; }
+  dialog > .dialog-top { display: none; }
+  dialog > .dialog-body { display: block; overflow: visible; padding: 0; }
+}
